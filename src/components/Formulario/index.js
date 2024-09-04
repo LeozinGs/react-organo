@@ -44,6 +44,7 @@ const Formulario = () => {
                     valor={cargo}
                     aoAlterado={valor => setCargo(valor)}
                 />
+
                 <CampoTexto
                     label='Imagem'
                     placeholder='Digite o endereço da imagem'

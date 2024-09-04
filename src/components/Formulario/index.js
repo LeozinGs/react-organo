@@ -14,7 +14,7 @@ const times = [
     'Inovação e Gestão'
 ];
 
-const Formulario = () => {
+const Formulario = (props) => {
 
     const [nome, setNome] = useState('');
     const [cargo, setCargo] = useState('');
@@ -23,6 +23,12 @@ const Formulario = () => {
 
     const aoSalvar = (e) => {
         e.preventDefault();
+        props.aoColaboradorCadastrado({
+            nome,
+            cargo,
+            imagem,
+            time
+        });
     }
 
     return (

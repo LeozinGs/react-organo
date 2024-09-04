@@ -4,17 +4,17 @@ import CampoTexto from '../CampoTexto';
 import ListaSuspensa from '../ListaSuspensa';
 import './Formulario.css';
 
-const times = [
-    'Programação',
-    'Front-End',
-    'Data Science',
-    'Devops',
-    'Ux e Design',
-    'Mobile',
-    'Inovação e Gestão'
-];
-
 const Formulario = (props) => {
+
+    const times = [
+        'Programação',
+        'Front-End',
+        'Data Science',
+        'Devops',
+        'Ux e Design',
+        'Mobile',
+        'Inovação e Gestão'
+    ];
 
     const [nome, setNome] = useState('');
     const [cargo, setCargo] = useState('');

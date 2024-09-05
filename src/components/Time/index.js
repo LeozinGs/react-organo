@@ -1,3 +1,4 @@
+import Card from '../Card';
 import './Time.css';
 
 const Time = (props) => {
@@ -6,8 +7,15 @@ const Time = (props) => {
     const cssH3 = { borderColor: props.corPrimaria };
 
     return (
-        <section className='time' style={cssSection}>
+        (props.colaboradores.length > 0) && <section className='time' style={cssSection}>
             <h3 style={cssH3}>{props.nome}</h3>
+            <div className='colaboradores'>
+                {props.colaboradores.map(colaborador => <Card
+                    nome={colaborador.nome}
+                    cargo={colaborador.cargo}
+                    imagem={colaborador.imagem}
+                />)}
+            </div>
         </section>
     );
 }

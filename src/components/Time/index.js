@@ -11,9 +11,11 @@ const Time = (props) => {
             <h3 style={cssH3}>{props.nome}</h3>
             <div className='colaboradores'>
                 {props.colaboradores.map(colaborador => <Card
+                    key={colaborador.nome}
                     nome={colaborador.nome}
                     cargo={colaborador.cargo}
                     imagem={colaborador.imagem}
+                    corDeFundo={props.corPrimaria}
                 />)}
             </div>
         </section>

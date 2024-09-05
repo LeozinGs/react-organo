@@ -4,21 +4,26 @@
 
 .container-rodape {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-image: url('/public/images/fundo.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 2rem;
+    padding: 4rem;
 }
 
 .rodape div p {
     font-size: 1.25rem;
     color: #fff;
+    font-weight: 600;
 }
 
 .container-botoes {
     display: flex;
     gap: 3rem;
+}
+
+.container-botoes a {
+    cursor: pointer;
 }

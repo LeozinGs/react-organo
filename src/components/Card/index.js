@@ -1,9 +1,10 @@
 import './Card.css';
+import { AiFillCloseCircle } from "react-icons/ai";
 
 const Card = ({ nome, imagem, cargo, corDeFundo, aoDeletar }) => {
     return (
         <div className="colaborador">
-            <div className="deletar" onClick={aoDeletar}>deletar</div>
+            <AiFillCloseCircle size={25} className="deletar" onClick={aoDeletar} />
             <div className='cabecalho' style={{ backgroundColor: corDeFundo }}>
                 <img src={imagem} alt={nome} />
             </div>
